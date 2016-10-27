@@ -14,7 +14,7 @@ export class TodoService extends Init{
   	var todos = JSON.parse(localStorage.getItem('todos'));
     return todos;
   } 
-  addTodo(newTodo:string){
+  addTodo(newTodo:any){
   var todos = JSON.parse(localStorage.getItem('todos'));
   	todos.push(newTodo);
   	localStorage.setItem('todos', JSON.stringify(todos));

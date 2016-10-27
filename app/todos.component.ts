@@ -24,7 +24,7 @@ appState = 'default';
   addTodo() {
     var newTodo = {text: this.add_todo}
     this.todos.push(newTodo);
-    this._todoService.addTodo(newTodo)
+    this._todoService.addTodo(newTodo);
   }
   deleteTodo(todoText:string){
     for(var i=0; i < this.todos.length;i++){
